@@ -2,9 +2,9 @@
 
 int main () {
 
-int anneeNaissance;
-int anneeActuelle;
-int age;
+int anneeNaissance = 1994;
+int anneeActuelle = 2026;
+int age = anneeActuelle - anneeNaissance;
 
 return 0;
 } 
