@@ -8,7 +8,7 @@ int main () {
 		printf("vous êtes majeur \n");
 	}
 	else {
-	        printf("vous êtes mineur");
+	        printf("vous êtes mineur\n");
 	}
 		return 0;
 }
