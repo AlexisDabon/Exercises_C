@@ -12,8 +12,11 @@ int main () {
 	
 	if (age <= 0) {
 		printf ("accès refusé , âge non valide \n");
+		return 1;
 	}
 	else {
 		printf ("accès autorisé \n");
 	}
+
+	return 0;
 }
