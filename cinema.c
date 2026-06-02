@@ -38,6 +38,18 @@ int main () {
 			printf ("choix invalide \n");
 			return 1;
 	}
+	
+	if (age <= 18) {
+		prixFinal = prixBase*0.80;
+	}
+	else if (age >= 65) {
+		prixFinal = prixBase*0.85;
+	}
+	else {
+		prixFinal = prixBase;
+	}
+	
+	printf ("le prix de votre billet est de : %.2f \n", prixFinal);
 
 	return 0;
 }
