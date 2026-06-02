@@ -24,7 +24,20 @@ int main () {
 	printf ("votre choix 1-3 \n");
 	scanf ("%d", &choixFilms);
 
-
+	switch (choixFilms) {
+		case 1 :
+			prixBase = 9.50;
+			break;
+		case 2 : 
+			prixBase = 12.50;
+			break;
+		case 3 : 
+			prixBase = 16.00;
+			break;
+		default : 
+			printf ("choix invalide \n");
+			return 1;
+	}
 
 	return 0;
 }
