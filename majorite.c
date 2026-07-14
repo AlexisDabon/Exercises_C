@@ -14,6 +14,12 @@ int main(void) {
 		printf("ERREUR AGE IMPROBABLE \n");
 		return 1;
 	}
+
+	if (ageUtilisateur >= 18) {
+		printf("ENTREZ \n");
+	} else { 
+		printf("MAJORITE OBLIGATOIRE \n");
+	}
 		return 0;
 }
 
