@@ -1,12 +1,15 @@
 #include <stdio.h>
+#include <time.h>
 
 int main () {
 
-int anneeNaissance = 1994;
-int anneeActuelle = 2026;
-int age = anneeActuelle - anneeNaissance;
+int anneeNaissance;
+int anneeActuelle;
+int age;
 
-printf("en 2026 j'ai %d ans\n", age);
+time_t tempsBrut;
+struct tm *tempsLocal;
 
-return 0;
-} 
+time(&tempsBrut);
+
+tempsLocal = localtime(&tempsBrut); 
