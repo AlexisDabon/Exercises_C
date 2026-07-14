@@ -1,14 +1,18 @@
 #include <stdio.h> 
 
-int main () {
-	int ageUtilisateur;
+int main(void) {
+	unsigned int ageUtilisateur = 0;
+
 	printf(" Quel âge avez vous ? ");
-	scanf("%d" , &ageUtilisateur);
-	if (ageUtilisateur >=18) {
-		printf("vous êtes majeur \n");
+
+	if (scanf("%u", &ageUtilisateur) != 1) {
+		printf("ERREUR AGE INVALIDE \n");
+		return 1;
 	}
-	else {
-	        printf("vous êtes mineur\n");
+
+	if (ageUtilisateur > 130) {
+		printf("ERREUR AGE IMPROBABLE \n");
+		return 1;
 	}
 		return 0;
 }
