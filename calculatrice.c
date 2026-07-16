@@ -1,39 +1,21 @@
-#include <stdio.h> 
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
 
-int main () { 
-	int nombre1;
-	int nombre2;
-	int choixOperations;
+int main (void){
+	int16_t nombre1;
+	int16_t nombre2;
+	int8_t choixOperations;
 
 	printf ("Entrez le premier nombre :\n");
-	scanf ("%d", &nombre1);
+	if (scanf("%hd", &nombre1) != 1) {
+		return EXIT_FAILURE;
+	}
 
 	printf ("Entrez le second nombre :\n");
-	scanf ("%d", &nombre2);
-
-	printf ("Choisissez l'operation :\n");
-    	printf ("1. Addition (+)\n");
-    	printf ("2. Soustraction (-)\n");
-    	printf ("3. Multiplication (*)\n");
-    	printf ("4. Division (/)\n");
-    	printf ("Votre choix (1-4) : ");
-    	scanf ("%d", &choixOperations);
-
-	if (choixOperations == 1) {
-		printf ("%d", nombre1 + nombre2);
+	if (scanf("%hd", &nombre2) != 1) {
+		return EXIT_FAILURE;
 	}
-	else if (choixOperations == 2) {
-		printf ("%d", nombre1 - nombre2);
-	}
-	else if (choixOperations == 3) { 
-		printf ("%d", nombre1 * nombre2);
-	}
-	else if (choixOperations == 4) { 
-		printf ("%d", nombre1 / nombre2);
-	}
-	else {
-		printf("erreur de saisie \n");
-	}	
 
 	return 0;
 }
