@@ -23,20 +23,17 @@ int main (void){
 	}
 	
 	if (choixOperations == 1) {
-                printf("Résultat : %d\n", nombre1 + nombre2);
+		printf("Résultat : %d\n", nombre1 + nombre2);
 	}
-        else if (choixOperations == 2) {
-                printf("Résultat : %d\n", nombre1 - nombre2);
+	else if (choixOperations == 2) {
+		printf("Résultat : %d\n", nombre1 - nombre2);
 	}
-        else if (choixOperations == 3) {
-                printf("Résultat : %d\n", nombre1 * nombre2);
-	}
-
-        else {
+	else if (choixOperations == 3) {
+		printf("Résultat : %d\n", nombre1 * nombre2);
+	} else {
        		fprintf(stderr, "Choix invalide \n");
      		return EXIT_FAILURE;	
 	}
-	
-return EXIT_SUCCESS;
 
+	return EXIT_SUCCESS;
 }
