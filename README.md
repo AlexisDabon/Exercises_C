@@ -13,3 +13,6 @@ Memories optimized C calculator that uses precise `stdint.h` types (`int16_t` an
 
 * **IV**: cinema.c
 An ultra-compact ticketing system that replaces bulky control structures with a direct-access price array. It calculates age-based discounts on a single line using an optimized nested ternary operator.
+
+* **V**: securite.c
+This project demonstrates secure input handling in C, featuring a robust loop mechanism that validates both data types and numerical ranges. It is built to be crash-proof, ensuring that all user entries are correctly parsed and verified before registration.
