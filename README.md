@@ -25,3 +25,11 @@ An ultra-compact ticketing system that replaces bulky control structures with a 
 ### V: securite.c
 
 This project demonstrates secure input handling in C, featuring a robust loop mechanism that validates both data types and numerical ranges. It is built to be crash-proof, ensuring that all user entries are correctly parsed and verified before registration.
+
+## KEY CONCEPTS
+
+* **fichier.c:** Used `<time.h>` to retrieve the current system time.
+* **majorite.c:** Employed `unsigned int` to validate input, preventing errors from negative numbers and non-numeric characters.
+* **calculator.c:** Utilized `<stdint.h>` to optimize memory usage by selecting precise integer types.
+* **cinema.c:** Used a `float` array to efficiently store and access pricing data.
+* **securite.c:** Created a `void` function utilizing `getchar()` to flush the `stdin` buffer and ensure program stability.   
