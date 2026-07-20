@@ -1,10 +1,10 @@
-# LOGIC SERIES OF C PROGRAMMING:
+# LOGIC SERIES OF C PROGRAMING:
 
 * These C exercises cover various concepts across different levels of C programming.
 * These mini-programs are iterative and are saved through regular 'git commit' commands.
 
 
-## PROGRAMMS BY ORDER 
+## PROGRAMS BY ORDER 
 
 ### I: fichier.c (Dynamic Age Calculator)
 
