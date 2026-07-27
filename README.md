@@ -1,4 +1,6 @@
-# LOGIC SERIES OF C PROGRAMING:
+# LOGIC SERIES OF C PROGRAMING: 
+
+* Compilation: gcc -Wall -Wextra -Werror -pedantic -std=c11
 
 * These C exercises cover various concepts across different levels of C programming.
 * These mini-programs are iterative and are saved through regular 'git commit' commands.
