@@ -1,0 +1,10 @@
+# Executables
+01_age
+02_majorite
+03_note
+04_calculatrice
+05_cinema
+
+# Object and temporary files
+*.o
+*.out
