@@ -31,7 +31,11 @@ This project demonstrates secure input handling in C, featuring a robust loop me
 ## KEY CONCEPTS
 
 * **fichier.c:** Used `<time.h>` to retrieve the current system time.
+
 * **majorite.c:** Employed `unsigned int` to validate input, preventing errors from negative numbers and non-numeric characters.
+
 * **calculator.c:** Utilized `<stdint.h>` to optimize memory usage by selecting precise integer types.
+
 * **cinema.c:** Used a `float` array to efficiently store and access pricing data.
+
 * **securite.c:** Created a `void` function utilizing `getchar()` to flush the `stdin` buffer and ensure program stability.   
