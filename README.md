@@ -33,3 +33,20 @@ An ultra-compact ticketing system that replaces bulky control structures with a 
 * **`03_note.c`**: Created a `void` function utilizing `getchar()` to flush the `stdin` buffer and ensure program stability.
 * **`04_calculatrice.c`**: Utilized `<stdint.h>` to optimize memory usage by selecting precise integer types.
 * **`05_cinema.c`**: Used a `float` array to efficiently store and access pricing data.
+
+## Compilation and Execution
+
+This project uses a `Makefile` to automate compilation under the **C11** standard with strict compiler flags (`-Wall -Wextra -Werror -pedantic`).
+
+```bash
+# 1. Compile all exercises
+make
+
+# 2. Run a program
+./01_age
+
+# 3. Clean binary files
+make clean
+
+# 4. Manual compilation (without Makefile)
+gcc -Wall -Wextra -Werror -pedantic -std=c11 01_age.c -o 01_age
